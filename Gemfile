@@ -23,6 +23,9 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+# # if you are in MacOS Sierra and your ruby version is 2.4.0.The ruby version is not compatible with json 1.8.3. You can try add this line in your Gemfile:
+# gem 'json', github: 'flori/json', branch: 'v1.8'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
