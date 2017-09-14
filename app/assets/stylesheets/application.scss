@@ -11,9 +11,10 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
- *= require_self
  */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
 body {
   padding: 0;
@@ -60,79 +61,17 @@ body {
   min-height: 400px;
   color: #fff;
 }
-
-.para-one {
-  width: 50%;
-  float: left;
-}
-
-.para-two {
-  width: 50%;
-  float: left;
-}
  
 /*----- Menu -----*/
-  .menu {
-    width:100%;
-    background:#ff5a5f;
-  }
-
-.menu ul {
-  display:inline-block;
-}
- 
-.menu li {
-  margin:0px 50px 0px 0px;
-  float:left;
-  list-style:none;
-  font-size: small;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
- 
-.menu li:last-child {
-  margin-right:0px;
-}
- 
-.menu a {
-  color:#fff;
-  transition:color linear 0.15s;
-  text-decoration: none;
-}
- 
-.menu a:hover, .menu .current-item a {
-  text-decoration:none;
-  color:#303030;
-}
 .menu {
   width:100%;
   background:#ff5a5f;
 }
- 
-.menu ul {
-  display:inline-block;
-}
- 
-.menu li {
-  margin:0px 50px 0px 0px;
-  float:left;
-  list-style:none;
-  font-size:17px;
-}
- 
-.menu li:last-child {
-  margin-right:0px;
-}
- 
-.menu a {
-  color:#fff;
-  transition:color linear 0.15s;
-  text-decoration: none;
-}
- 
-.menu a:hover, .menu .current-item a {
-  text-decoration:none;
-  color:#303030;
+
+.ul{
+  .li{
+    color: #fff;
+  }
 }
 
 #footer {
@@ -164,18 +103,21 @@ body {
       font-size: 15px;
     }
   }
+}
 
-  .div-one{
-    .para-one{
-      width: 100%;
-    }
-    .para-two{
-      width: 100%;
-    }
-  }
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+    background-color: #8064A2;
+    border-color: #8064A2;
+}
 
-  body nav.menu ul.active {
-    display: none;
-  }
+.pull-left {
+  float: left !important;
+}
+.pull-right {
+  float: right !important;
 }
 
